@@ -128,6 +128,8 @@ a {
 #nav {
      width: 100%;
      transition: all 1s ease-in-out;
+     position: relative;
+     z-index: 9999;
 }
 #nav.sticky {
      position: fixed !important;
@@ -187,18 +189,31 @@ a {
 .nav-mobile {
      opacity: 0;
      height: 0;
+     width: 100%;
+     background: var(--bleu-fonce);
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-direction: column;
+     color:white;
      transition: all 0.3s ease-in-out;
+}
+.nav-mobile a {
+     opacity: 0;
+     transition: all 0.5s ease-in-out;
 }
 .nav-mobile.active {
      opacity: 1;
-     width: 100%;
      height: 50vh;
-     background: #000;
+}
+.nav-mobile.active a {
+     opacity : 1;
 }
 
 /* Bienvenue - header */
 .bienvenue-content {
      position: absolute;
+     z-index: 3;
      top: 50%;
      transform: translateY(-50%);
      margin-left: 7%;
@@ -359,15 +374,15 @@ a {
 }
 .b1 {
      top: 0px;
-     left: calc(50% - 150px);
+     left: calc(50% - 250px);
 }
 .b2 {
      top: 200px;
-     left: calc(50% + 150px);
+     left: calc(50% + 250px);
 }
 .b3 {
      top: 450px;
-     left: calc(50% - 150px);
+     left: calc(50% - 250px);
 }
 
 /* Portfolio */

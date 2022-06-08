@@ -19,9 +19,16 @@ window.addEventListener("DOMContentLoaded", () => {
      // Navigation responsive 
      const icoNavMobile = document.querySelector('.ico-responsive');
      const navMobile = document.querySelector('.nav-mobile');
+     const liensNavMobile = document.querySelectorAll('.nav-mobile a');
+
      icoNavMobile.addEventListener('click', () => {
           navMobile.classList.toggle('active');
      })
+     liensNavMobile.forEach(lien => {
+          lien.addEventListener('click', () => {
+               navMobile.classList.toggle('active');
+          })
+     });
 
 
 });
