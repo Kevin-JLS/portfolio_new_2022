@@ -1,11 +1,21 @@
 /* Large 1200px */
 @media screen and (max-width: 1200px) {
-     
+
 }
 
 /* Laptops 992px */
 @media screen and (max-width: 992px) {
-     
+     /* Competences */
+     .competences-container {
+          flex-wrap: wrap;
+     }
+     .img-competences img {
+          width: 200px;
+     }
+     /* Timeline */
+     .box {
+          width: 200px;
+     }
 }
 
 /* Tablets 768px */
@@ -15,5 +25,14 @@
 
 /* Phones 600px */
 @media screen and (max-width: 600px) {
-     
+     /* navigation */
+     .nav-content {
+          width: 90%;
+          padding: 0;
+     }
+     .nav-liens {display: none;}
+     .ico-responsive {
+          display: block;
+          font-size: 40px;
+     }
 }

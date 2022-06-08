@@ -19,6 +19,14 @@ a {
 .m-15 {
      margin: 10px 0
 }
+.badge {
+     background: #23153c;
+     padding: 4px 8px;
+     color: white;
+     border-radius: 8px;
+     display: inline-block;
+     margin: 5px;
+}
 :root {
      /* colors */
      --orange: #ff603f;
@@ -172,6 +180,22 @@ a {
      color: var(--orange);
 }
 
+/* Nav mobile */
+.ico-responsive {
+     display: none;
+}
+.nav-mobile {
+     opacity: 0;
+     height: 0;
+     transition: all 0.3s ease-in-out;
+}
+.nav-mobile.active {
+     opacity: 1;
+     width: 100%;
+     height: 50vh;
+     background: #000;
+}
+
 /* Bienvenue - header */
 .bienvenue-content {
      position: absolute;
@@ -269,8 +293,8 @@ a {
      font-family: "Allura", sans-serif;
 }
 .card-competence {
-     padding: 15px;
-     width: 200px;
+     padding: 10px;
+     width: 400px;
      margin: 15px;
      text-align: center;
      border: 1px solid rgba(0, 0, 0, 0.055);
@@ -281,7 +305,6 @@ a {
      color: var(--orange);
      font-family: "Allura", sans-serif;
      text-align: center;
-     margin-bottom: 20px;
 }
 
 /* Timeline */
@@ -336,15 +359,15 @@ a {
 }
 .b1 {
      top: 0px;
-     left: calc(50% - 250px);
+     left: calc(50% - 150px);
 }
 .b2 {
      top: 200px;
-     left: calc(50% + 250px);
+     left: calc(50% + 150px);
 }
 .b3 {
      top: 450px;
-     left: calc(50% - 250px);
+     left: calc(50% - 150px);
 }
 
 /* Portfolio */

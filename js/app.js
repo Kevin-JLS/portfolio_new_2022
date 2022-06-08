@@ -16,4 +16,12 @@ window.addEventListener("DOMContentLoaded", () => {
           navigation.classList.toggle('sticky', window.scrollY > 0)
      })
 
+     // Navigation responsive 
+     const icoNavMobile = document.querySelector('.ico-responsive');
+     const navMobile = document.querySelector('.nav-mobile');
+     icoNavMobile.addEventListener('click', () => {
+          navMobile.classList.toggle('active');
+     })
+
+
 });
