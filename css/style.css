@@ -430,7 +430,8 @@ a {
      margin: 15px 0;
 }
 .techno {
-     background: rgba(49, 153, 1, 0.185);
+     background: var(--bleu-fonce);
+     color:white;
      padding: 5px;
      border-radius: 5px;
      display: inline-block;
